@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23A87140612EF4C496F31055 /* Pods_netguru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E9EBF7E889F7881661E24C /* Pods_netguru.framework */; };
+		AE30EAA11FC302E400A28357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EAA01FC302E400A28357 /* AppDelegate.swift */; };
+		AE30EAA31FC302E400A28357 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EAA21FC302E400A28357 /* AppsViewController.swift */; };
+		AE30EAA51FC302E400A28357 /* AppDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EAA41FC302E400A28357 /* AppDetailsViewController.swift */; };
+		AE30EAA81FC302E400A28357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE30EAA61FC302E400A28357 /* Main.storyboard */; };
+		AE30EAAA1FC302E400A28357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE30EAA91FC302E400A28357 /* Assets.xcassets */; };
+		AE30EAAD1FC302E400A28357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE30EAAB1FC302E400A28357 /* LaunchScreen.storyboard */; };
+		AE30EABD1FC3084300A28357 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EABC1FC3084300A28357 /* Database.swift */; };
+		AE30EABF1FC3091100A28357 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EABE1FC3091100A28357 /* Developer.swift */; };
+		AE30EAC11FC309E800A28357 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EAC01FC309E800A28357 /* App.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51EE781A9FDAF31EFCA523EE /* Pods-netguru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netguru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netguru/Pods-netguru.debug.xcconfig"; sourceTree = "<group>"; };
+		80E9EBF7E889F7881661E24C /* Pods_netguru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netguru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEE6327DD11C7D2A894C4B2 /* Pods-netguru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netguru.release.xcconfig"; path = "Pods/Target Support Files/Pods-netguru/Pods-netguru.release.xcconfig"; sourceTree = "<group>"; };
+		AE30EA9D1FC302E400A28357 /* netguru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netguru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE30EAA01FC302E400A28357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE30EAA21FC302E400A28357 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		AE30EAA41FC302E400A28357 /* AppDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewController.swift; sourceTree = "<group>"; };
+		AE30EAA71FC302E400A28357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE30EAA91FC302E400A28357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE30EAAC1FC302E400A28357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE30EAAE1FC302E400A28357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE30EABC1FC3084300A28357 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		AE30EABE1FC3091100A28357 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		AE30EAC01FC309E800A28357 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE30EA9A1FC302E400A28357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A87140612EF4C496F31055 /* Pods_netguru.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62746CB05CF801CA7E58312D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51EE781A9FDAF31EFCA523EE /* Pods-netguru.debug.xcconfig */,
+				8CEE6327DD11C7D2A894C4B2 /* Pods-netguru.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE30EA941FC302E400A28357 = {
+			isa = PBXGroup;
+			children = (
+				AE30EA9F1FC302E400A28357 /* netguru */,
+				AE30EA9E1FC302E400A28357 /* Products */,
+				62746CB05CF801CA7E58312D /* Pods */,
+				EAE8570E3623C77DBB33AA87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE30EA9E1FC302E400A28357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE30EA9D1FC302E400A28357 /* netguru.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE30EA9F1FC302E400A28357 /* netguru */ = {
+			isa = PBXGroup;
+			children = (
+				AE30EAA01FC302E400A28357 /* AppDelegate.swift */,
+				AE30EAA21FC302E400A28357 /* AppsViewController.swift */,
+				AE30EAA41FC302E400A28357 /* AppDetailsViewController.swift */,
+				AE30EAA61FC302E400A28357 /* Main.storyboard */,
+				AE30EAA91FC302E400A28357 /* Assets.xcassets */,
+				AE30EAAB1FC302E400A28357 /* LaunchScreen.storyboard */,
+				AE30EAAE1FC302E400A28357 /* Info.plist */,
+				AE30EABC1FC3084300A28357 /* Database.swift */,
+				AE30EAC01FC309E800A28357 /* App.swift */,
+				AE30EABE1FC3091100A28357 /* Developer.swift */,
+			);
+			path = netguru;
+			sourceTree = "<group>";
+		};
+		EAE8570E3623C77DBB33AA87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E9EBF7E889F7881661E24C /* Pods_netguru.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE30EA9C1FC302E400A28357 /* netguru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE30EAB11FC302E400A28357 /* Build configuration list for PBXNativeTarget "netguru" */;
+			buildPhases = (
+				29008A133BE8CD4F0A3C9509 /* [CP] Check Pods Manifest.lock */,
+				AE30EA991FC302E400A28357 /* Sources */,
+				AE30EA9A1FC302E400A28357 /* Frameworks */,
+				AE30EA9B1FC302E400A28357 /* Resources */,
+				EB3CE2581A40A0013C853F0B /* [CP] Embed Pods Frameworks */,
+				DAE9AFE46BE927502E242430 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = netguru;
+			productName = netguru;
+			productReference = AE30EA9D1FC302E400A28357 /* netguru.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE30EA951FC302E400A28357 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Piotr Sochalewski";
+				TargetAttributes = {
+					AE30EA9C1FC302E400A28357 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE30EA981FC302E400A28357 /* Build configuration list for PBXProject "netguru" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE30EA941FC302E400A28357;
+			productRefGroup = AE30EA9E1FC302E400A28357 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE30EA9C1FC302E400A28357 /* netguru */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE30EA9B1FC302E400A28357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE30EAAD1FC302E400A28357 /* LaunchScreen.storyboard in Resources */,
+				AE30EAAA1FC302E400A28357 /* Assets.xcassets in Resources */,
+				AE30EAA81FC302E400A28357 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29008A133BE8CD4F0A3C9509 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-netguru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE9AFE46BE927502E242430 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netguru/Pods-netguru-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3CE2581A40A0013C853F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-netguru/Pods-netguru-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netguru/Pods-netguru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE30EA991FC302E400A28357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE30EAA51FC302E400A28357 /* AppDetailsViewController.swift in Sources */,
+				AE30EABF1FC3091100A28357 /* Developer.swift in Sources */,
+				AE30EAA31FC302E400A28357 /* AppsViewController.swift in Sources */,
+				AE30EAC11FC309E800A28357 /* App.swift in Sources */,
+				AE30EABD1FC3084300A28357 /* Database.swift in Sources */,
+				AE30EAA11FC302E400A28357 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE30EAA61FC302E400A28357 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE30EAA71FC302E400A28357 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE30EAAB1FC302E400A28357 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE30EAAC1FC302E400A28357 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE30EAAF1FC302E400A28357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE30EAB01FC302E400A28357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE30EAB21FC302E400A28357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EE781A9FDAF31EFCA523EE /* Pods-netguru.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PM48474J4;
+				INFOPLIST_FILE = netguru/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.sochalewski.netguru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE30EAB31FC302E400A28357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEE6327DD11C7D2A894C4B2 /* Pods-netguru.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PM48474J4;
+				INFOPLIST_FILE = netguru/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.sochalewski.netguru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE30EA981FC302E400A28357 /* Build configuration list for PBXProject "netguru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE30EAAF1FC302E400A28357 /* Debug */,
+				AE30EAB01FC302E400A28357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE30EAB11FC302E400A28357 /* Build configuration list for PBXNativeTarget "netguru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE30EAB21FC302E400A28357 /* Debug */,
+				AE30EAB31FC302E400A28357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE30EA951FC302E400A28357 /* Project object */;
+}

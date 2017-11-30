@@ -3,7 +3,7 @@
 //  netguru
 //
 //  Created by Piotr Sochalewski on 20.11.2017.
-//  Copyright © 2017 Piotr Sochalewski. All rights reserved.
+//  Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
 //
 
 import UIKit
@@ -27,7 +27,6 @@ final class AppsViewController: UIViewController {
         
         let app = dataSource.controller.record(at: indexPath)
         appDetailsViewController.app = app
-        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     private func setupTableView() {

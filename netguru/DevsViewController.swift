@@ -3,16 +3,29 @@
 //  netguru
 //
 //  Created by Piotr Sochalewski on 27.11.2017.
-//  Copyright © 2017 Piotr Sochalewski. All rights reserved.
+//  Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
 //
 
 import UIKit
 import GRDB
 
+final class DescriptableGRDBTableViewDelegate<T: Record & TextRepresentable>: GRDBTableViewDelegate<T> {
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let developer = controller.record(at: indexPath) as! Developer
+        cell.textLabel?.text = developer.name
+        dbQueue.inDatabase { db in
+            cell.detailTextLabel?.text = try! developer.app.fetchOne(db)?.name
+        }
+        return cell
+    }
+}
+
 final class DevsViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
-    private lazy var dataSource = GRDBTableViewDelegate<Developer>()
+    private lazy var dataSource = DescriptableGRDBTableViewDelegate<Developer>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +48,8 @@ final class DevsViewController: UIViewController {
                     self.tableView.insertRows(at: [indexPath], with: .automatic)
                 case .deletion(let indexPath):
                     self.tableView.deleteRows(at: [indexPath], with: .automatic)
+                case .update(let indexPath, _):
+                    self.tableView.reloadRows(at: [indexPath], with: .automatic)
                 default:
                     break
                 }

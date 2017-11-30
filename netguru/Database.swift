@@ -3,7 +3,7 @@
 //  netguru
 //
 //  Created by Piotr Sochalewski on 20.11.2017.
-//  Copyright © 2017 Piotr Sochalewski. All rights reserved.
+//  Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
 //
 
 import GRDB
@@ -33,7 +33,7 @@ struct Database {
                 t.column("id", .integer).primaryKey()
                 
                 // An integer key that referencens App's id colument
-                t.column("appId", .integer).references(App.databaseTableName, column: "id", onDelete: nil, onUpdate: nil, deferred: false)
+                t.column("appId", .integer).references(App.databaseTableName, column: "id")
 
                 // Sort person names in a localized case insensitive fashion by default
                 t.column("name", .text).notNull().collate(.localizedCaseInsensitiveCompare)

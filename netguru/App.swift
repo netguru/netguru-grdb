@@ -3,7 +3,7 @@
 //  netguru
 //
 //  Created by Piotr Sochalewski on 20.11.2017.
-//  Copyright © 2017 Piotr Sochalewski. All rights reserved.
+//  Copyright © 2017 Netguru Sp. z o.o. All rights reserved.
 //
 
 import GRDB
@@ -16,15 +16,13 @@ final class App: Record, TextRepresentable {
         return Developer.filter(Column("appId") == id)
     }
     
+    override class var databaseTableName: String {
+        return "apps"
+    }
+    
     init(name: String) {
         self.name = name
         super.init()
-    }
-    
-    // MARK: Record overrides
-    
-    override class var databaseTableName: String {
-        return "apps"
     }
     
     required init(row: Row) {

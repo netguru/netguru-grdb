@@ -32,6 +32,9 @@ struct Database {
                 // An integer primary key auto-generates unique IDs
                 t.column("id", .integer).primaryKey()
                 
+                // An integer key that referencens App's id colument
+                t.column("appId", .integer).references(App.databaseTableName, column: "id", onDelete: nil, onUpdate: nil, deferred: false)
+
                 // Sort person names in a localized case insensitive fashion by default
                 t.column("name", .text).notNull().collate(.localizedCaseInsensitiveCompare)
             }

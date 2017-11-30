@@ -12,8 +12,8 @@ final class App: Record, TextRepresentable {
 
     var id: Int64?
     var name: String
-    var developers: QueryInterfaceRequest<Developer> {
-        return Developer.filter(Column("id") == 0)
+    var developer: QueryInterfaceRequest<Developer> {
+        return Developer.filter(Column("appId") == id)
     }
     
     init(name: String) {

@@ -12,19 +12,19 @@ import GRDB
 final class DevsViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
-    private var dataSource: GRDBTableViewDelegate<Developer>!
+    private lazy var dataSource = GRDBTableViewDelegate<Developer>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataSource = GRDBTableViewDelegate<Developer>()
         setupTableView()
     }
     
     private func setupTableView() {
-        
+        try! dataSource.controller.performFetch()
         tableView.dataSource = dataSource
         tableView.delegate = dataSource
+        tableView.tableFooterView = UIView()
         
         dataSource.controller
             .trackChanges(willChange: { [unowned self] _ in
@@ -41,8 +41,6 @@ final class DevsViewController: UIViewController {
             }, didChange: { [unowned self] _ in
                 self.tableView.endUpdates()
             })
-        
-        try! dataSource.controller.performFetch()
     }
     
     @IBAction private func addButtonAction(_ sender: Any) {

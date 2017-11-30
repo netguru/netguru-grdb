@@ -9,7 +9,7 @@
 import GRDB
 import UIKit
 
-final class GRDBTableViewDelegate<T: Record & TextRepresentable>: NSObject, UITableViewDelegate, UITableViewDataSource {
+class GRDBTableViewDelegate<T: Record & TextRepresentable>: NSObject, UITableViewDelegate, UITableViewDataSource {
     
     let controller = try! FetchedRecordsController(dbQueue, request: T.order(Column("name")))
 
@@ -38,5 +38,9 @@ final class GRDBTableViewDelegate<T: Record & TextRepresentable>: NSObject, UITa
         try! dbQueue.inDatabase { db in
             _ = try object.delete(db)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 }

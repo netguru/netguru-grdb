@@ -12,20 +12,30 @@ import GRDB
 final class AppsViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
-    private var dataSource: GRDBTableViewDelegate<App>!
+    private lazy var dataSource = GRDBTableViewDelegate<App>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataSource = GRDBTableViewDelegate<App>()
         setupTableView()
     }
     
-    private func setupTableView() {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let appDetailsViewController = segue.destination as? AppDetailsViewController,
+            let indexPath = tableView.indexPathForSelectedRow,
+            segue.identifier == "detail" else { return }
         
+        let app = dataSource.controller.record(at: indexPath)
+        appDetailsViewController.app = app
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+    private func setupTableView() {
+        try! dataSource.controller.performFetch()
         tableView.dataSource = dataSource
         tableView.delegate = dataSource
-        
+        tableView.tableFooterView = UIView()
+
         dataSource.controller
             .trackChanges(willChange: { [unowned self] _ in
                 self.tableView.beginUpdates()
@@ -41,8 +51,6 @@ final class AppsViewController: UIViewController {
             }, didChange: { [unowned self] _ in
                 self.tableView.endUpdates()
             })
-        
-        try! dataSource.controller.performFetch()
     }
     
     @IBAction private func addButtonAction(_ sender: Any) {

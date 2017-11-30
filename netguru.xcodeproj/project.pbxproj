@@ -17,6 +17,10 @@
 		AE30EABD1FC3084300A28357 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EABC1FC3084300A28357 /* Database.swift */; };
 		AE30EABF1FC3091100A28357 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EABE1FC3091100A28357 /* Developer.swift */; };
 		AE30EAC11FC309E800A28357 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE30EAC01FC309E800A28357 /* App.swift */; };
+		AE7B1CFB1FCC387300628A3A /* DevsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7B1CFA1FCC387300628A3A /* DevsViewController.swift */; };
+		AE7B1CFE1FCC3B0600628A3A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7B1CFD1FCC3B0600628A3A /* UIViewController.swift */; };
+		AE7B1D011FCC3C9800628A3A /* GRDBTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7B1D001FCC3C9800628A3A /* GRDBTableViewDelegate.swift */; };
+		AE7B1D031FCC3E7E00628A3A /* TextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7B1D021FCC3E7E00628A3A /* TextRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		AE30EABC1FC3084300A28357 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		AE30EABE1FC3091100A28357 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		AE30EAC01FC309E800A28357 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		AE7B1CFA1FCC387300628A3A /* DevsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevsViewController.swift; sourceTree = "<group>"; };
+		AE7B1CFD1FCC3B0600628A3A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		AE7B1D001FCC3C9800628A3A /* GRDBTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBTableViewDelegate.swift; sourceTree = "<group>"; };
+		AE7B1D021FCC3E7E00628A3A /* TextRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 				AE30EAA01FC302E400A28357 /* AppDelegate.swift */,
 				AE30EAA21FC302E400A28357 /* AppsViewController.swift */,
 				AE30EAA41FC302E400A28357 /* AppDetailsViewController.swift */,
+				AE7B1CFA1FCC387300628A3A /* DevsViewController.swift */,
+				AE7B1D001FCC3C9800628A3A /* GRDBTableViewDelegate.swift */,
 				AE30EAA61FC302E400A28357 /* Main.storyboard */,
 				AE30EAA91FC302E400A28357 /* Assets.xcassets */,
 				AE30EAAB1FC302E400A28357 /* LaunchScreen.storyboard */,
@@ -88,8 +98,26 @@
 				AE30EABC1FC3084300A28357 /* Database.swift */,
 				AE30EAC01FC309E800A28357 /* App.swift */,
 				AE30EABE1FC3091100A28357 /* Developer.swift */,
+				AE7B1CFC1FCC3AF200628A3A /* Extensions */,
+				AE7B1CFF1FCC3C7A00628A3A /* Protocols */,
 			);
 			path = netguru;
+			sourceTree = "<group>";
+		};
+		AE7B1CFC1FCC3AF200628A3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE7B1CFD1FCC3B0600628A3A /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE7B1CFF1FCC3C7A00628A3A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AE7B1D021FCC3E7E00628A3A /* TextRepresentable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		EAE8570E3623C77DBB33AA87 /* Frameworks */ = {
@@ -229,11 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7B1CFB1FCC387300628A3A /* DevsViewController.swift in Sources */,
 				AE30EAA51FC302E400A28357 /* AppDetailsViewController.swift in Sources */,
 				AE30EABF1FC3091100A28357 /* Developer.swift in Sources */,
 				AE30EAA31FC302E400A28357 /* AppsViewController.swift in Sources */,
 				AE30EAC11FC309E800A28357 /* App.swift in Sources */,
 				AE30EABD1FC3084300A28357 /* Database.swift in Sources */,
+				AE7B1D011FCC3C9800628A3A /* GRDBTableViewDelegate.swift in Sources */,
+				AE7B1D031FCC3E7E00628A3A /* TextRepresentable.swift in Sources */,
+				AE7B1CFE1FCC3B0600628A3A /* UIViewController.swift in Sources */,
 				AE30EAA11FC302E400A28357 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

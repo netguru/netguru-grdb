@@ -8,7 +8,4 @@
 
 import UIKit
 
-final class AppDetailsViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-}
+final class AppDetailsViewController: UIViewController { }

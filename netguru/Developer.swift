@@ -8,18 +8,16 @@
 
 import GRDB
 
-final class Developer: Record {
+final class Developer: Record, TextRepresentable {
     
     var id: Int64?
     var name: String
     
-    init(name: String, score: Int) {
+    init(name: String) {
         self.name = name
         super.init()
     }
-    
-    // MARK: Record overrides
-    
+        
     override class var databaseTableName: String {
         return "developers"
     }

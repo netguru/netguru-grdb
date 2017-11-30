@@ -8,7 +8,7 @@
 
 import GRDB
 
-final class App: Record {
+final class App: Record, TextRepresentable {
 
     var id: Int64?
     var name: String

@@ -1,6 +1,0 @@
-framework module Pods_netguru {
-  umbrella header "Pods-netguru-umbrella.h"
-
-  export *
-  module * { export * }
-}
